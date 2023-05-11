@@ -23,8 +23,12 @@ class Student:
 
     def alert_santa(self):
         self.naughty_list = True
-    
-    @property
-    def apply_extension(self):
-        self.end_date = self.end_date + timedelta(days=30)
-        return self.end_date
+
+    def apply_extension(self, days):
+        self.end_date = self.end_date + timedelta(days=days)
+
+
+    # @property
+    # def apply_extension(self):
+    #     self.end_date = self.end_date + timedelta(days=30)
+    #     return self.end_date
